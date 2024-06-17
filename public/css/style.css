@@ -69,5 +69,5 @@ table.dataTable thead .sorting_asc {
   padding: 5px;
   color:white;
   background-image: linear-gradient(to right,rgb(207, 28, 227),rgb(35, 17, 228));
-  border-radius: 2px;
+  border-radius: 4px;
 }
