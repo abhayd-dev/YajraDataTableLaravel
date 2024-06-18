@@ -24,7 +24,7 @@ class EmpController extends Controller
             $data = Employee::latest()->get();
             return DataTables::of($data)
                 ->addColumn('action', function ($row) {
-                    $btn =  '<a data-id="'.$row->id.'" data-name="'.$row->name.'" data-email="'.$row->email.'" data-age="'.$row->age.'" data-salary="'.$row->salary.'"   class="edit btn btn-primary text-white rounded-square btn-sm">Edit</a> <button class="delete btn btn-danger btn-sm" data-id="'.$row->id.'" >Delete</button>';
+                    $btn =  '<a data-id="'.$row->id.'" data-name="'.$row->name.'" data-email="'.$row->email.'" data-age="'.$row->age.'" data-salary="'.$row->salary.'"   class="edit btn btn-info text-white rounded-square btn-sm">Edit</a> <button class="delete btn btn-danger btn-sm" data-id="'.$row->id.'" >Delete</button>';
                     return $btn;
                 })
                 ->rawColumns(['action'])

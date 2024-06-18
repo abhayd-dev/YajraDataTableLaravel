@@ -12,7 +12,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        Employee::factory()->count(200)->create();
+        Employee::factory()->count(100)->create();
 
         // Uncomment if you want to create a specific user
         // \App\Models\User::factory()->create([

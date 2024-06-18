@@ -4,12 +4,13 @@ div.dataTables_wrapper div.dataTables_filter input {
 margin-left: 0.5em;
 display: inline-block;
 width: auto;
-border: 2px solid green;
+border: 2px solid rgb(216, 7, 192);
 color:black;
-background-color: #cbb7cb;
+background-color: #fffcff;
+font-weight: 500;
 }
 .emp{
-  background: #eddbe8 ;
+  background: #fff ;
   color: #0d539a;
 }
 .dataTables_wrapper div.dataTables_info {
@@ -58,16 +59,163 @@ label{
  font-weight: 700 !important;
 }
 .thead3{
-  background-color: rgb(108, 103, 103) !important;
+  background-image:linear-gradient(to bottom,rgb(10, 9, 10),rgb(136, 132, 131)) !important;
   color: #fff !important;
 }
 table.dataTable thead .sorting_asc {
   background: transparent !important;
+ 
 }
 .salary{
-  border:1px groove rgb(49, 134, 230);
-  padding: 5px;
-  color:white;
-  background-image: linear-gradient(to right,rgb(207, 28, 227),rgb(35, 17, 228));
-  border-radius: 4px;
+  /* border:1px groove rgb(49, 134, 230); */
+  padding: 10px;
+  color:rgb(11, 11, 11);
+  /* background-image: linear-gradient(to top,rgb(252, 32, 138),rgb(136, 26, 221)); */
+  border-radius: 7px;
 }
+
+/* Importing Google font - Open Sans */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.footer {
+  background: #10182F;
+  border-radius: 6px;
+  
+}
+
+.footer .footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3.5rem;
+  padding: 60px;
+}
+
+.footer-row .footer-col h4 {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.footer-col .links {
+  margin-top: 20px;
+}
+
+.footer-col .links li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.footer-col .links li a {
+  text-decoration: none;
+  color: #bfbfbf;
+}
+
+.footer-col .links li a:hover {
+  color: #fff;
+}
+
+.footer-col p {
+  margin: 20px 0;
+  color: #bfbfbf;
+  max-width: 300px;
+}
+
+.footer-col form {
+  display: flex;
+  gap: 5px;
+}
+
+.footer-col input {
+  height: 40px;
+  border-radius: 6px;
+  background: none;
+  width: 100%;
+  outline: none;
+  border: 1px solid #7489C6 ;
+  caret-color: #fff;
+  color: #fff;
+  padding-left: 10px;
+}
+
+.footer-col input::placeholder {
+  color: #ccc;
+}
+
+ .footer-col form button {
+  background: #fff;
+  outline: none;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.footer-col form button:hover {
+  background: #cecccc;
+}
+
+.footer-col .icons {
+  display: flex;
+  margin-top: 30px;
+  gap: 30px;
+  cursor: pointer;
+}
+
+.footer-col .icons i {
+  color: #afb6c7;
+}
+
+.footer-col .icons i:hover  {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    transform: none;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .footer .footer-row {
+    padding: 20px;
+    gap: 1rem;
+  }
+
+  .footer-col form {
+    display: block;
+  }
+
+  .footer-col form :where(input, button) {
+    width: 100%;
+  }
+
+  .footer-col form button {
+    margin: 10px 0 0 0;
+  }
+}
+
+.logo{
+  background-image: linear-gradient(to top,rgb(252, 32, 138),rgb(136, 26, 221));
+  border: 1px groove orange;
+  padding: 5px;
+  color: white;
+  border-radius: 10px;
+}
+
+
+
+
+
